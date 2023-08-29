@@ -1,0 +1,75 @@
+@import "variables";
+
+.toolbar {
+  height: $toolbar-height;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 4px 5px gray;
+  position: relative;
+  z-index: 10;
+  padding: 0 10px;
+
+  &:nth-child(2) {
+    z-index: 9;
+    gap: 10px;
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+  }
+
+  input {
+    margin-left: 10px;
+  }
+
+  &__btn {
+    height: 25px;
+    width: 25px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-size: cover;
+    margin-left: 10px;
+
+    &:nth-child(1) {
+      margin-left: 0;
+    }
+  }
+
+  .brush {
+    background: url("../assets/img/brush.png") no-repeat center center;
+  }
+
+  .rect {
+    background: url("../assets/img/rect.png") no-repeat center center;
+  }
+
+  .circle {
+    background: url("../assets/img/circle.png") no-repeat center center;
+  }
+
+  .eraser {
+    background: url("../assets/img/eraser.png") no-repeat center center;
+  }
+
+  .line {
+    background: url("../assets/img/line.png") no-repeat center center;
+  }
+
+  .undo {
+    margin-left: auto;
+    background: url("../assets/img/undo.png") no-repeat center center;
+  }
+
+  .redo {
+    background: url("../assets/img/redo.png") no-repeat center center;
+  }
+
+  .save {
+    background: url("../assets/img/save.png") no-repeat center center;
+  }
+
+}

@@ -1,0 +1,13 @@
+@import "variables";
+
+.canvas {
+  height: calc(100vh - $toolbar-height*2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+canvas {
+  border: 1px solid black;
+  background-color: white;
+}
